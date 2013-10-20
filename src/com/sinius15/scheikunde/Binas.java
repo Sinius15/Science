@@ -24,26 +24,6 @@ public class Binas {
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-//			matters2.add(new Al());
-//			matters2.add(new Ar());
-//			matters2.add(new Si());
-//			matters2.add(new Be());
-//			matters2.add(new Cl());
-//			matters2.add(new He());
-//			matters2.add(new Li());
-//			matters2.add(new Mg());
-//			matters2.add(new Na());
-//			matters2.add(new Ne());
-//			matters2.add(new Fe());
-//			
-//			matters1.add(new O());
-//			matters1.add(new P());
-//			matters1.add(new S());
-//			matters1.add(new B());
-//			matters1.add(new C());
-//			matters1.add(new F());
-//			matters1.add(new H());
-//			matters1.add(new N());
 			
 		}
 		
