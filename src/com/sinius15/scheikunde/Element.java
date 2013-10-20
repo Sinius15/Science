@@ -1,6 +1,6 @@
 package com.sinius15.scheikunde;
 
-public interface Matter {
+public interface Element {
 
 	String name();
 	String symbol();

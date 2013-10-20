@@ -10,24 +10,24 @@ import java.util.Scanner;
 
 public class IOer {
 
-	public static void saveFile(File f, ArrayList<Matter> in) throws IOException{
+	public static void saveFile(File f, ArrayList<Element> in) throws IOException{
 		if(!f.exists())
 			f.createNewFile();
 		PrintWriter out = new PrintWriter(f);
-		for(Matter m : in){
+		for(Element m : in){
 			out.println(m.symbol() + ";" + m.name() + ";" + m.atomNumber() + ";" + m.atomMassa());
 		}
 		out.close();
 	}
 	
-	public static ArrayList<Matter> loadfile(InputStream inputStream) throws FileNotFoundException{
-		ArrayList<Matter> out = new ArrayList<>();
+	public static ArrayList<Element> loadfile(InputStream inputStream) throws FileNotFoundException{
+		ArrayList<Element> out = new ArrayList<>();
 		Scanner scan = new Scanner(inputStream);
 		String line;
 		while(scan.hasNextLine()){
 			line = scan.nextLine();
 			final String[] split = line.split(";");
-			Matter temp = new Matter() {
+			Element temp = new Element() {
 				@Override
 				public String symbol() {
 					return split[0];

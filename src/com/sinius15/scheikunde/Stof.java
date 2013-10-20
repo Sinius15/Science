@@ -18,13 +18,13 @@ public class Stof {
 		}
 		name = in;
 		while(in.length() != 0){
-			Matter cur = null;
+			Element cur = null;
 			int curAmount = 1;
-			for(Matter m : Binas.matters2)
+			for(Element m : Binas.matters2)
 				if(in.startsWith(m.symbol()))
 					cur = m;
 			if(cur == null)
-				for(Matter m : Binas.matters1)
+				for(Element m : Binas.matters1)
 					if(in.startsWith(m.symbol()))
 						cur = m;
 			if(cur == null)

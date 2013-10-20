@@ -22,7 +22,7 @@ import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JScrollPane;
 
-import com.sinius15.scheikunde.Eenheden;
+import com.sinius15.scheikunde.Units;
 import com.sinius15.scheikunde.Start;
 import com.sinius15.scheikunde.Stof;
 
@@ -273,8 +273,8 @@ public class SKFrame extends JFrame {
 				
 				float beginMass = Float.parseFloat(spinner.getValue().toString());
 				int beginEenheid = eenheidBox1.getSelectedIndex();
-				float grams = Eenheden.toGram(beginMass, beginEenheid);
-				System.out.println("De gegenves omrekenen naar gram: " +  beginMass + " " + Eenheden.eenheidToString(beginEenheid)  + "  =>  " + grams + " gram");
+				float grams = Units.toGram(beginMass, beginEenheid);
+				System.out.println("De gegenves omrekenen naar gram: " +  beginMass + " " + Units.eenheidToString(beginEenheid)  + "  =>  " + grams + " gram");
 				System.out.println("Nu hebben we alle gegenvens die we nodig hebben!");
 				System.out.println("");
 				
@@ -301,13 +301,13 @@ public class SKFrame extends JFrame {
 				System.out.println("");
 				
 				int eindEenheid = eenheidBox2.getSelectedIndex();
-				float endMass = Eenheden.to(grams, Eenheden.GRAM, eindEenheid);
-				System.out.println("De laatste stap is het omrekenen van gram naar " + Eenheden.eenheidToString(eindEenheid));
+				float endMass = Units.to(grams, Units.GRAM, eindEenheid);
+				System.out.println("De laatste stap is het omrekenen van gram naar " + Units.eenheidToString(eindEenheid));
 				System.out.println("Daar is hopelijk geen uitleg voor nodig.");
 				System.out.println("");
 				
-				System.out.println("Conclusie: Als je bij deze reactie " + beginMass + " " + Eenheden.eenheidToString(beginEenheid) + " " + input.name + " hebt, "
-									+ "dan heb je in theorie " + endMass + " " + Eenheden.eenheidToString(eindEenheid) + " " + wil.name + ".");
+				System.out.println("Conclusie: Als je bij deze reactie " + beginMass + " " + Units.eenheidToString(beginEenheid) + " " + input.name + " hebt, "
+									+ "dan heb je in theorie " + endMass + " " + Units.eenheidToString(eindEenheid) + " " + wil.name + ".");
 				System.out.println("");
 				System.out.println("");
 			}

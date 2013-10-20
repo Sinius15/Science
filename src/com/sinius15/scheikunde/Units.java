@@ -1,6 +1,6 @@
 package com.sinius15.scheikunde;
 
-public class Eenheden {
+public class Units {
 
 	public static final int UGRAM = 0;
 	public static final int MGRAM = 1;

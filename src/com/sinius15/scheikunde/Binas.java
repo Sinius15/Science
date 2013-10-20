@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Binas {
 
-	public static ArrayList<Matter> matters1 = new ArrayList<>();
-	public static ArrayList<Matter> matters2 = new ArrayList<>();
+	public static ArrayList<Element> matters1 = new ArrayList<>();
+	public static ArrayList<Element> matters2 = new ArrayList<>();
 	
 	public static void Init(){
 		
@@ -15,8 +15,8 @@ public class Binas {
 			if (classLoader == null) 
 			    classLoader = Class.class.getClassLoader();
 			
-			ArrayList<Matter> temp = IOer.loadfile(classLoader.getResourceAsStream("Data.txt"));
-			for(Matter m : temp){
+			ArrayList<Element> temp = IOer.loadfile(classLoader.getResourceAsStream("Data.txt"));
+			for(Element m : temp){
 				if(m.symbol().length() == 2)
 					matters2.add(m);
 				else
@@ -49,23 +49,23 @@ public class Binas {
 		
 	}
 	
-	public static Matter getMatterByName(String name){
-		for(Matter m : matters2){
+	public static Element getMatterByName(String name){
+		for(Element m : matters2){
 			if(m.name().equals(name))
 				return m;
 		}
-		for(Matter m : matters1){
+		for(Element m : matters1){
 			if(m.name().equals(name))
 				return m;
 		}	
 		return null;
 	}
 	
-	public static Matter getMatterbySymbol(String symbol){
-		for(Matter m : matters2)
+	public static Element getMatterbySymbol(String symbol){
+		for(Element m : matters2)
 			if(m.symbol().equals(symbol))
 				return m;
-		for(Matter m : matters1)
+		for(Element m : matters1)
 			if(m.symbol().equals(symbol))
 				return m;
 		return null;
