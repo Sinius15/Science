@@ -1,4 +1,4 @@
-package com.sinius15.scheikunde.gui;
+package com.sinius15.science.reactionSolver;
 
 import java.awt.Color;
 import java.io.ByteArrayOutputStream;

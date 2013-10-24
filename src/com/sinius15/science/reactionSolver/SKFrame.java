@@ -1,4 +1,4 @@
-package com.sinius15.scheikunde.gui;
+package com.sinius15.science.reactionSolver;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -22,9 +22,7 @@ import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JScrollPane;
 
-import com.sinius15.scheikunde.Units;
-import com.sinius15.scheikunde.Start;
-import com.sinius15.scheikunde.Stof;
+import com.sinius15.science.general.Units;
 
 public class SKFrame extends JFrame {
 
@@ -212,12 +210,13 @@ public class SKFrame extends JFrame {
 		JLabel lblKiesHierDe = new JLabel("Kies hier de eenheid waarin je de uitkomst in wilt hebben.");
 		lblKiesHierDe.setBounds(10, 222, 283, 14);
 		contentPane.add(lblKiesHierDe);
+		final SKFrame frame = this;
 		
 		JButton btnBereken = new JButton("Bereken!");
 		btnBereken.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				JOptionPane.showMessageDialog(Start.frame, "Dit programma'tje is een hobby projectje. Er kunnen fouten in zitten!" + System.lineSeparator()
+				JOptionPane.showMessageDialog(frame, "Dit programma'tje is een hobby projectje. Er kunnen fouten in zitten!" + System.lineSeparator()
 						+ "Ook let dit programmatje niet op significantie, dus dat moet u zelf doen." + System.lineSeparator()
 						+ "Verder is het niet de bedoeling dat hiermee huiswerk opgaven worden gemaakt, dit is alleen een controle middel."
 						+ "Gebruik op eigen risico.", "Pas Op!", JOptionPane.WARNING_MESSAGE);

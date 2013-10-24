@@ -1,4 +1,4 @@
-package com.sinius15.scheikunde;
+package com.sinius15.science.general;
 
 import java.util.ArrayList;
 
@@ -10,7 +10,6 @@ public class Binas {
 	public static void Init(){
 		
 		try {
-			
 			ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
 			if (classLoader == null) 
 			    classLoader = Class.class.getClassLoader();
@@ -29,7 +28,7 @@ public class Binas {
 		
 	}
 	
-	public static Element getMatterByName(String name){
+	public static Element getElementByName(String name){
 		for(Element m : matters2){
 			if(m.name().equals(name))
 				return m;
@@ -41,7 +40,7 @@ public class Binas {
 		return null;
 	}
 	
-	public static Element getMatterbySymbol(String symbol){
+	public static Element getElementbySymbol(String symbol){
 		for(Element m : matters2)
 			if(m.symbol().equals(symbol))
 				return m;

@@ -1,4 +1,4 @@
-package com.sinius15.scheikunde;
+package com.sinius15.science.general;
 
 public interface Element {
 

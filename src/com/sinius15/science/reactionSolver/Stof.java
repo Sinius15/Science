@@ -1,5 +1,7 @@
-package com.sinius15.scheikunde;
+package com.sinius15.science.reactionSolver;
 
+import com.sinius15.science.general.Binas;
+import com.sinius15.science.general.Element;
 
 public class Stof {
 
