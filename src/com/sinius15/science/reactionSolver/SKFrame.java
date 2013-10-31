@@ -241,11 +241,11 @@ public class SKFrame extends JFrame {
 					if(heeft6.isSelected()) input = new Stof(in[5]);
 				} catch (Exception e1) {
 					e1.printStackTrace();
-					System.err.println("Er is iets fout gegaan. Waarscheinlijk heb je iets verkeerds ingevoerd.");
+					System.err.println("Er is iets fout gegaan. Dit is jou fout. Je bakt er helemaal niks van!");
 					
 				}
 				if(input == null || input.molMassa == 0.0f){
-					System.err.println("Er is iets fout gegaan. Waarscheinlijk heb je iets verkeerds ingevoerd.");
+					System.err.println("Er is iets fout gegaan. Dit is jou fout. Je bakt er helemaal niks van!");
 					return;
 				}
 					
@@ -261,10 +261,10 @@ public class SKFrame extends JFrame {
 					if(wil6.isSelected()) wil = new Stof(in[5]);
 				} catch (Exception e1) { 
 					e1.printStackTrace();
-					System.err.println("Er is iets fout gegaan. Waarscheinlijk heb je iets verkeerds ingevoerd.");
+					System.err.println("Er is iets fout gegaan. Dit is jou fout. Je bakt er helemaal niks van!");
 				}
 				if(wil == null || wil.molMassa == 0.0f){
-					System.err.println("Er is iets fout gegaan. Waarscheinlijk heb je iets verkeerds ingevoerd.");
+					System.err.println("Er is iets fout gegaan. Dit is jou fout. Je bakt er helemaal niks van!");
 					return;
 				}
 					
